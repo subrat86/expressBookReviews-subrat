@@ -31,6 +31,10 @@ public_users.get('/', function (req, res) {
     return res.status(200).send(JSON.stringify(books));
 });
 
+public_users.get('/task10', function (req, res) {
+    return res.status(200).send(JSON.stringify(books));
+});
+
 // Get book details based on ISBN
 public_users.get('/isbn/:isbn', function (req, res) {
     const isbn = req.params.isbn;
